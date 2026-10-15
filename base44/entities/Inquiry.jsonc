@@ -1,0 +1,47 @@
+{
+  "name": "Inquiry",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "company": {
+      "type": "string",
+      "title": "Company"
+    },
+    "service": {
+      "type": "string",
+      "title": "Service",
+      "enum": [
+        "AI & data services",
+        "Custom software development",
+        "IT consulting & support",
+        "Not sure yet"
+      ]
+    },
+    "message": {
+      "type": "string",
+      "title": "Brief"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "new",
+        "contacted",
+        "closed"
+      ],
+      "default": "new"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "message"
+  ]
+}

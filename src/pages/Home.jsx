@@ -1,0 +1,23 @@
+import Navbar from '@/components/site/Navbar';
+import Hero from '@/components/site/Hero';
+import Services from '@/components/site/Services';
+import Approach from '@/components/site/Approach';
+import WhyNanosoft from '@/components/site/WhyNanosoft';
+import Contact from '@/components/site/Contact';
+import Footer from '@/components/site/Footer';
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        <Services />
+        <Approach />
+        <WhyNanosoft />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
+}
